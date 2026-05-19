@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Stories | Aifred Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-enter">
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Hauptnavigation">
+        <a class="brand" href="index.html">Aifred Project</a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu-list" aria-label="Navigation öffnen">Menü</button>
+        <ul id="menu-list" class="menu-list">
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#authors">Autor:innen</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="shell section" id="stories">
+      <h1>Story Sammlung</h1>
+      <p class="lead">Drei immersive Beispielgeschichten für dein Storytelling-Archiv.</p>
+
+      <section id="featured" class="section">
+        <h2>Featured Artikel</h2>
+        <div class="card-grid">
+          <article class="story-card">
+            <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=80" alt="Dunkler Wald" class="thumb" />
+            <p class="chip">Dark Forest Legend · 7 Min</p>
+            <h3>Die Legende vom schwarzen Forstpfad</h3>
+            <p>Zwischen Tannen und Nebel folgt ein Licht den Schritten derer, die nachts nicht umkehren.</p>
+            <a href="article.html?id=moorpfad" class="page-link">Weiterlesen</a>
+          </article>
+
+          <article class="story-card">
+            <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1200&q=80" alt="Vergessenes Dorf" class="thumb" />
+            <p class="chip">Village Tale · 6 Min</p>
+            <h3>Das vergessene Dorf am Fluss</h3>
+            <p>Hinter einer alten Brücke liegt ein Dorf, das nur bei Regen in Karten und Erinnerungen zurückkehrt.</p>
+            <a href="article.html?id=flussdorf" class="page-link">Weiterlesen</a>
+          </article>
+
+          <article class="story-card">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" alt="Mysteriöser Berg" class="thumb" />
+            <p class="chip">Mountain Mystery · 8 Min</p>
+            <h3>Der stille Berg ohne Echo</h3>
+            <p>In den Höhen über dem Tal verschwindet jedes Geräusch – außer einer Stimme, die niemand kennt.</p>
+            <a href="article.html?id=stillerberg" class="page-link">Weiterlesen</a>
+          </article>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="authors" class="author-section">
+        <h2>Autor:innen</h2>
+        <p>Kuratiert von einem kleinen Kreis lokaler Erzähler:innen, die alte Motive in moderne Sprache übertragen.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer compact-footer">
+      <p>© <span id="year"></span> Aifred Project</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
