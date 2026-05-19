@@ -3,34 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Artikel | Aifred Project</title>
+    <meta name="description" content="Artikelansicht im Lesemodus – Aifred Project" />
+    <title>Lesemodus | Aifred Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="page-enter reading-mode">
+  <body class="reading-mode">
     <header class="site-header">
       <nav class="nav shell" aria-label="Hauptnavigation">
         <a class="brand" href="index.html">Aifred Project</a>
-        <ul class="menu-list static-menu"><li><a href="stories.html">Zurück zur Übersicht</a></li></ul>
+        <ul class="menu-list static-menu">
+          <li><a href="stories.html">Zur Übersicht</a></li>
+        </ul>
       </nav>
     </header>
 
     <main class="shell article-layout">
-      <article class="article-page">
-        <p class="chip" id="meta">Dark Forest Legend · 7 Min Lesezeit · Mara Elsing</p>
-        <h1 id="title">Die Legende vom schwarzen Forstpfad</h1>
-        <p class="lead" id="lead">Wenn Nebel und Mondlicht sich berühren, öffnet sich tief im Wald ein Pfad, den man tagsüber vergeblich sucht.</p>
-        <div id="content">
-          <p>Im alten Forst spricht niemand laut über den schwarzen Pfad. Man findet ihn nicht, man wird von ihm gefunden.</p>
-          <p>Wer den Weg bei Nacht betritt, hört zuerst das Rascheln hinter sich, dann das Schweigen vor sich.</p>
-          <p>Am Ende des Pfades steht ein verwitterter Stein. Dort, so sagt man, begegnet man einer Frage, die man lange vermieden hat.</p>
-        </div>
+      <article class="article-page fade-up">
+        <p class="kicker">Lokale Sage</p>
+        <h1>Das Licht am Moorpfad</h1>
+        <p class="lead">Wenn abends der Nebel über den Weg zieht, berichten die Ältesten von einem Licht, das niemand halten – aber jeder finden kann.</p>
+
+        <p>Im Dorf sprach man nie laut darüber. Nur beim langsamen Gehen, zwischen den letzten Häusern und den stillen Feldern, tauchte es manchmal auf: ein blasses Leuchten, kaum heller als der Mond.</p>
+        <p>Wer rannte, verlor es. Wer stehen blieb, sah nur Dunkelheit. Doch wer in ruhigem Tempo weiterging, spürte eine seltsame Sicherheit, als würde jemand schweigend vorangehen.</p>
+        <p>Viele meinten, es sei die Erinnerung an Menschen, die den Weg früher bewachten. Andere sagten, das Moor selbst habe eine Seele, die sich den Eiligen entzieht.</p>
+        <p>Heute folgt kaum noch jemand dem alten Pfad. Doch an stillen Herbstabenden sieht man manchmal eine warme Linie im Nebel – und wer ihr mit offenem Blick folgt, kommt immer dort an, wo er wirklich hinmusste.</p>
       </article>
+
+      <aside class="article-side slide-up">
+        <h2>Lesemodus</h2>
+        <p>Reduzierte Oberfläche, mehr Ruhe für längere Texte, optimale Breite für mobile und große Displays.</p>
+        <a class="btn" href="stories.html">Nächste Geschichte</a>
+      </aside>
     </main>
 
-    <footer class="site-footer compact-footer"><p>© <span id="year"></span> Aifred Project</p></footer>
+    <footer class="site-footer compact-footer">
+      <p>© <span id="year"></span> Aifred Project · Lesemodus</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

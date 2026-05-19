@@ -3,68 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Stories | Aifred Project</title>
+    <meta name="description" content="Alle Geschichten, Sagen und Märchen im Aifred Project." />
+    <title>Geschichten | Aifred Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="page-enter">
+  <body>
     <header class="site-header">
       <nav class="nav shell" aria-label="Hauptnavigation">
         <a class="brand" href="index.html">Aifred Project</a>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="menu-list" aria-label="Navigation öffnen">Menü</button>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu-list">Menü</button>
         <ul id="menu-list" class="menu-list">
-          <li><a href="#stories">Stories</a></li>
-          <li><a href="#featured">Featured</a></li>
-          <li><a href="#authors">Autor:innen</a></li>
+          <li><a href="#geschichten">Geschichten</a></li>
+          <li><a href="#sagen">Sagen</a></li>
+          <li><a href="#maerchen">Märchen</a></li>
+          <li><a href="article.html">Lesemodus</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="shell section" id="stories">
-      <h1>Story Sammlung</h1>
-      <p class="lead">Drei immersive Beispielgeschichten für dein Storytelling-Archiv.</p>
+    <main class="shell section">
+      <div class="section-title">
+        <h1>Story Archiv</h1>
+        <p>Stöbere durch lokale Erzählungen, alte Legenden und zeitlose Märchen.</p>
+      </div>
 
-      <section id="featured" class="section">
-        <h2>Featured Artikel</h2>
+      <section id="geschichten" class="category">
+        <h2>Geschichten</h2>
         <div class="card-grid">
-          <article class="story-card">
-            <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=80" alt="Dunkler Wald" class="thumb" />
-            <p class="chip">Dark Forest Legend · 7 Min</p>
-            <h3>Die Legende vom schwarzen Forstpfad</h3>
-            <p>Zwischen Tannen und Nebel folgt ein Licht den Schritten derer, die nachts nicht umkehren.</p>
-            <a href="article.html?story=forest" class="page-link">Lesen</a>
-          </article>
-
-          <article class="story-card">
-            <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1200&q=80" alt="Vergessenes Dorf" class="thumb" />
-            <p class="chip">Village Tale · 6 Min</p>
-            <h3>Das vergessene Dorf am Fluss</h3>
-            <p>Hinter einer alten Brücke liegt ein Dorf, das nur bei Regen in Karten und Erinnerungen zurückkehrt.</p>
-            <a href="article.html?story=village" class="page-link">Lesen</a>
-          </article>
-
-          <article class="story-card">
-            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" alt="Mysteriöser Berg" class="thumb" />
-            <p class="chip">Mountain Mystery · 8 Min</p>
-            <h3>Der stille Berg ohne Echo</h3>
-            <p>In den Höhen über dem Tal verschwindet jedes Geräusch – außer einer Stimme, die niemand kennt.</p>
-            <a href="article.html?story=mountain" class="page-link">Lesen</a>
-          </article>
+          <article class="story-card premium-card"><span class="chip">Neu</span><h3>Der letzte Glockenschlag</h3><p>Als die Turmuhr ausfiel, begann ein ganzes Viertel im eigenen Takt zu leben.</p><a href="article.html">Lesen</a></article>
+          <article class="story-card premium-card"><span class="chip">Klassik</span><h3>Der Brief unter der Linde</h3><p>Drei Zeilen in alter Schrift bringen ein jahrzehntelanges Schweigen ans Licht.</p><a href="article.html">Lesen</a></article>
         </div>
       </section>
 
-      <div class="divider"></div>
+      <section id="sagen" class="category">
+        <h2>Lokale Sagen</h2>
+        <div class="card-grid">
+          <article class="story-card premium-card"><span class="chip">Sage</span><h3>Das Licht am Moorpfad</h3><p>Im Nebel erscheint ein Licht, das nur jene sehen, die langsam genug gehen.</p><a href="article.html">Lesen</a></article>
+          <article class="story-card premium-card"><span class="chip">Region</span><h3>Der Wächter am Steinbogen</h3><p>Ein alter Bogen im Wald soll Reisende vor Entscheidungen warnen.</p><a href="article.html">Lesen</a></article>
+        </div>
+      </section>
 
-      <section id="authors" class="author-section">
-        <h2>Autor:innen</h2>
-        <p>Kuratiert von einem kleinen Kreis lokaler Erzähler:innen, die alte Motive in moderne Sprache übertragen.</p>
+      <section id="maerchen" class="category">
+        <h2>Märchen</h2>
+        <div class="card-grid">
+          <article class="story-card premium-card"><span class="chip">Märchen</span><h3>Die Uhrmacherin im Berg</h3><p>Verlorene Zeit wird zu Zahnrädern, die nur in stillen Nächten ticken.</p><a href="article.html">Lesen</a></article>
+          <article class="story-card premium-card"><span class="chip">Märchen</span><h3>Die Sängerin am See</h3><p>Ihre Stimme lässt selbst den Wind halten, wenn der Mond das Wasser trifft.</p><a href="article.html">Lesen</a></article>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer compact-footer">
-      <p>© <span id="year"></span> Aifred Project</p>
+      <p>© <span id="year"></span> Aifred Project · Geschichten, Sagen, Märchen</p>
     </footer>
     <script src="script.js"></script>
   </body>

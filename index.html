@@ -3,56 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="description" content="Aifred Project – Geschichten, Legenden und Märchen in cinematischer Dark-Mode-Atmosphäre." />
+    <meta
+      name="description"
+      content="Aifred Project – Geschichten, lokale Sagen und Märchen in modernem, ruhigem Design."
+    />
     <title>Aifred Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="page-enter">
+  <body>
     <header class="site-header">
-      <nav class="nav shell" aria-label="Hauptnavigation">
-        <a class="brand" href="index.html">Aifred Project</a>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="menu-list" aria-label="Navigation öffnen">Menü</button>
+      <nav class="nav container" aria-label="Hauptnavigation">
+        <a class="brand" href="#top">Aifred Project</a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu-list">
+          Menü
+        </button>
         <ul id="menu-list" class="menu-list">
-          <li><a href="stories.html">Stories</a></li>
-          <li><a href="stories.html#featured">Featured</a></li>
-          <li><a href="stories.html#authors">Autor:innen</a></li>
+          <li><a href="#geschichten">Geschichten</a></li>
+          <li><a href="#sagen">Sagen</a></li>
+          <li><a href="#maerchen">Märchen</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section class="hero hero-cinematic shell">
-        <div class="hero-image" role="img" aria-label="Nebeliger Wald bei Nacht"></div>
-        <div class="hero-content">
-          <p class="kicker">Cinematic Storytelling</p>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <p class="eyebrow">Erzählkultur in neuer Form</p>
           <h1>Aifred Project</h1>
-          <p>Lokale Sagen, vergessene Orte und rätselhafte Wege – in ruhiger, moderner Lesekultur.</p>
-          <a class="btn" href="stories.html">Geschichten entdecken</a>
+          <p class="subtitle">
+            Geschichten, lokale Legenden und zeitlose Märchen – gesammelt für ruhige Lesemomente.
+          </p>
+          <a class="hero-link" href="#geschichten">Jetzt entdecken</a>
         </div>
       </section>
 
-      <div class="divider shell"></div>
+      <section class="articles container" id="geschichten">
+        <div class="section-head">
+          <h2>Ausgewählte Texte</h2>
+          <p>Eine kleine Sammlung aus Dörfern, Wäldern und alten Wegen.</p>
+        </div>
 
-      <section class="shell section featured">
-        <h2>Featured Story</h2>
-        <article class="featured-card">
-          <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1400&q=80" alt="Dunkler Waldpfad" />
-          <div>
-            <p class="chip">7 Min Lesezeit · von Mara Elsing</p>
-            <h3>Die Legende vom schwarzen Forstpfad</h3>
-            <p>Ein alter Pfad, der nur bei Mondlicht erscheint – und Wanderer immer dorthin führt, wo sie eine Wahrheit finden.</p>
-            <a href="article.html?story=forest">Jetzt lesen →</a>
-          </div>
-        </article>
+        <div class="card-grid">
+          <article class="story-card" id="sagen">
+            <span class="tag">Lokale Sage</span>
+            <h3>Das Licht am Moorpfad</h3>
+            <p>
+              Jede Nacht erschien ein fernes Leuchten über dem Moor. Man sagte, es führe nur jene sicher
+              heim, die ohne Eile und mit offenem Herzen unterwegs sind.
+            </p>
+            <a href="#" aria-label="Sage Das Licht am Moorpfad lesen">Weiterlesen</a>
+          </article>
+
+          <article class="story-card" id="maerchen">
+            <span class="tag">Märchen</span>
+            <h3>Die Uhrmacherin im Berg</h3>
+            <p>
+              Tief im Fels lebte eine Uhrmacherin, die verlorene Zeit sammelte. Wer ihr eine Frage stellte,
+              erhielt nicht sofort eine Antwort – sondern den richtigen Moment.
+            </p>
+            <a href="#" aria-label="Märchen Die Uhrmacherin im Berg lesen">Weiterlesen</a>
+          </article>
+
+          <article class="story-card">
+            <span class="tag">Geschichte</span>
+            <h3>Der Brief im Lindenbaum</h3>
+            <p>
+              Zwischen den Wurzeln einer alten Linde fand ein Kind einen Brief ohne Absender. Darin standen
+              nur drei Zeilen – doch sie veränderten das ganze Dorf.
+            </p>
+            <a href="#" aria-label="Geschichte Der Brief im Lindenbaum lesen">Weiterlesen</a>
+          </article>
+        </div>
       </section>
     </main>
 
-    <footer class="site-footer compact-footer">
-      <p>© <span id="year"></span> Aifred Project</p>
+    <footer class="site-footer" id="kontakt">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Aifred Project</p>
+        <p>Ein ruhiger Ort für Geschichten, Sagen und Märchen.</p>
+      </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
