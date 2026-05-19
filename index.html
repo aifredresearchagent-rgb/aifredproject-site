@@ -3,88 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="description" content="Aifred Project – atmosphärische Geschichten, lokale Sagen und Märchen in moderner Lesekultur." />
+    <meta
+      name="description"
+      content="Aifred Project – Geschichten, lokale Sagen und Märchen in modernem, ruhigem Design."
+    />
     <title>Aifred Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="site-header">
-      <nav class="nav shell" aria-label="Hauptnavigation">
-        <a class="brand" href="index.html">Aifred Project</a>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="menu-list">Menü</button>
+      <nav class="nav container" aria-label="Hauptnavigation">
+        <a class="brand" href="#top">Aifred Project</a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu-list">
+          Menü
+        </button>
         <ul id="menu-list" class="menu-list">
-          <li><a href="stories.html">Geschichten</a></li>
-          <li><a href="stories.html#sagen">Sagen</a></li>
-          <li><a href="stories.html#maerchen">Märchen</a></li>
-          <li><a href="article.html">Lesemodus</a></li>
+          <li><a href="#geschichten">Geschichten</a></li>
+          <li><a href="#sagen">Sagen</a></li>
+          <li><a href="#maerchen">Märchen</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section class="hero shell">
-        <p class="kicker fade-up">Erzählkultur in Ruhe</p>
-        <h1 class="fade-up delay-1">Aifred Project</h1>
-        <p class="hero-text fade-up delay-2">Eine moderne Plattform für Geschichten, lokale Legenden und Märchen – ruhig, cinematisch und klar gestaltet.</p>
-        <div class="hero-actions fade-up delay-3">
-          <a class="btn" href="stories.html">Zu den Geschichten</a>
-          <a class="btn btn-subtle" href="article.html">Im Lesemodus lesen</a>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <p class="eyebrow">Erzählkultur in neuer Form</p>
+          <h1>Aifred Project</h1>
+          <p class="subtitle">
+            Geschichten, lokale Legenden und zeitlose Märchen – gesammelt für ruhige Lesemomente.
+          </p>
+          <a class="hero-link" href="#geschichten">Jetzt entdecken</a>
         </div>
       </section>
 
-      <section class="shell section">
-        <div class="section-title">
-          <h2>Entdecke Welten zwischen Dorflicht und Waldrand</h2>
-          <p>Kuratierte Texte in drei ruhigen Kategorien mit Fokus auf Lesbarkeit und Stimmung.</p>
+      <section class="articles container" id="geschichten">
+        <div class="section-head">
+          <h2>Ausgewählte Texte</h2>
+          <p>Eine kleine Sammlung aus Dörfern, Wäldern und alten Wegen.</p>
         </div>
 
-        <div class="featured-grid">
-          <article class="story-card premium-card slide-up">
-            <span class="chip">Geschichten</span>
-            <h3>Der Brief unter der Linde</h3>
-            <p>Ein Dorf, ein vergessener Brief und eine Erinnerung, die plötzlich alle wieder verbindet.</p>
-            <a href="article.html">Weiterlesen →</a>
-          </article>
-
-          <article class="story-card premium-card slide-up delay-1">
-            <span class="chip">Sagen</span>
+        <div class="card-grid">
+          <article class="story-card" id="sagen">
+            <span class="tag">Lokale Sage</span>
             <h3>Das Licht am Moorpfad</h3>
-            <p>Eine lokale Legende über ein Licht, das nur den Geduldigen den richtigen Weg zeigt.</p>
-            <a href="article.html">Weiterlesen →</a>
+            <p>
+              Jede Nacht erschien ein fernes Leuchten über dem Moor. Man sagte, es führe nur jene sicher
+              heim, die ohne Eile und mit offenem Herzen unterwegs sind.
+            </p>
+            <a href="#" aria-label="Sage Das Licht am Moorpfad lesen">Weiterlesen</a>
           </article>
 
-          <article class="story-card premium-card slide-up delay-2">
-            <span class="chip">Märchen</span>
+          <article class="story-card" id="maerchen">
+            <span class="tag">Märchen</span>
             <h3>Die Uhrmacherin im Berg</h3>
-            <p>Tief im Fels bewahrt eine Uhrmacherin verlorene Zeit für jene, die zu spät kamen.</p>
-            <a href="article.html">Weiterlesen →</a>
+            <p>
+              Tief im Fels lebte eine Uhrmacherin, die verlorene Zeit sammelte. Wer ihr eine Frage stellte,
+              erhielt nicht sofort eine Antwort – sondern den richtigen Moment.
+            </p>
+            <a href="#" aria-label="Märchen Die Uhrmacherin im Berg lesen">Weiterlesen</a>
+          </article>
+
+          <article class="story-card">
+            <span class="tag">Geschichte</span>
+            <h3>Der Brief im Lindenbaum</h3>
+            <p>
+              Zwischen den Wurzeln einer alten Linde fand ein Kind einen Brief ohne Absender. Darin standen
+              nur drei Zeilen – doch sie veränderten das ganze Dorf.
+            </p>
+            <a href="#" aria-label="Geschichte Der Brief im Lindenbaum lesen">Weiterlesen</a>
           </article>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="shell footer-grid">
-        <div>
-          <h4>Aifred Project</h4>
-          <p>Ein stiller Raum für moderne Erzählkultur.</p>
-        </div>
-        <div>
-          <h5>Navigation</h5>
-          <a href="stories.html">Alle Artikel</a>
-          <a href="article.html">Lesemodus</a>
-        </div>
-        <div>
-          <h5>Kategorien</h5>
-          <a href="stories.html#geschichten">Geschichten</a>
-          <a href="stories.html#sagen">Sagen</a>
-          <a href="stories.html#maerchen">Märchen</a>
-        </div>
+    <footer class="site-footer" id="kontakt">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Aifred Project</p>
+        <p>Ein ruhiger Ort für Geschichten, Sagen und Märchen.</p>
       </div>
-      <p class="copyright">© <span id="year"></span> Aifred Project</p>
     </footer>
 
     <script src="script.js"></script>

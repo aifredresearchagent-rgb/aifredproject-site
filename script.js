@@ -1,13 +1,15 @@
-const year = document.querySelector('#year');
-if (year) year.textContent = new Date().getFullYear();
-
 const menuToggle = document.querySelector('.menu-toggle');
-const menuList = document.querySelector('#menu-list');
+const menuList = document.querySelector('.menu-list');
+const year = document.querySelector('#year');
+
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
 
 if (menuToggle && menuList) {
   menuToggle.addEventListener('click', () => {
-    const open = menuList.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded', String(open));
+    const isOpen = menuList.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
   });
 
   menuList.querySelectorAll('a').forEach((link) => {
