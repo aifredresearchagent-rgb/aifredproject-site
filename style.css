@@ -1,0 +1,63 @@
+:root {
+  color-scheme: dark;
+  --bg:#090c12;
+  --surface:#121928;
+  --surface-2:#172033;
+  --text:#ecf1ff;
+  --muted:#b5bed6;
+  --line:rgba(255,255,255,.12);
+  --accent:#9fb0ff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Inter",sans-serif;background:radial-gradient(90rem 40rem at 10% -15%,#253354 0%,var(--bg) 50%);color:var(--text);line-height:1.75;transition:opacity .45s ease}
+body.page-enter{opacity:0;animation:fadeIn .6s ease forwards}
+@keyframes fadeIn{to{opacity:1}}
+.shell{width:min(1120px,92vw);margin-inline:auto}
+.site-header{position:sticky;top:0;background:rgba(9,12,18,.75);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:30}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:4.25rem;gap:1rem;position:relative}
+.brand{color:var(--text);text-decoration:none;font-weight:600}
+.menu-list{display:flex;list-style:none;gap:1rem;margin:0;padding:0}
+.menu-list a{color:var(--muted);text-decoration:none}.menu-list a:hover{color:var(--text)}
+.menu-toggle{display:none}
+
+h1,h2,h3{font-family:"Cormorant Garamond",serif;line-height:1.15;margin:.2rem 0 .7rem}
+h1{font-size:clamp(2.2rem,6vw,4.8rem)} h2{font-size:clamp(1.6rem,4vw,2.4rem)}
+.lead{color:var(--muted);max-width:68ch}
+.section{padding:3.5rem 0}
+
+.hero-cinematic{padding:2rem 0 1rem;display:grid;gap:1.2rem}
+.hero-image{min-height:58vh;border-radius:1.2rem;background:linear-gradient(150deg,rgba(9,12,18,.2),rgba(9,12,18,.85)),url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=80') center/cover;border:1px solid var(--line)}
+.hero-content p{color:var(--muted);max-width:65ch}
+.kicker{color:var(--accent);text-transform:uppercase;letter-spacing:.16em;font-size:.78rem}
+.btn{display:inline-block;color:var(--text);text-decoration:none;border:1px solid rgba(159,176,255,.4);background:rgba(159,176,255,.16);padding:.7rem 1rem;border-radius:999px;transition:transform .25s ease, background .25s ease}
+.btn:hover{transform:translateY(-2px);background:rgba(159,176,255,.28)}
+
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);margin:1.4rem auto}
+
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.story-card,.featured-card{background:linear-gradient(180deg,var(--surface-2),var(--surface));border:1px solid var(--line);border-radius:1rem;overflow:hidden;transition:transform .28s ease, box-shadow .28s ease}
+.story-card:hover,.featured-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.35)}
+.thumb{display:block;width:100%;height:170px;object-fit:cover}
+.story-card{padding:0 0 1rem}.story-card h3,.story-card p,.story-card a,.story-card .chip{padding:0 1rem}
+.featured-card{display:grid;grid-template-columns:1.2fr 1fr}.featured-card img{width:100%;height:100%;min-height:240px;object-fit:cover}.featured-card div{padding:1.2rem}
+.chip{color:var(--accent);font-size:.83rem}
+.page-link,.featured-card a{color:var(--text);text-decoration:none;font-weight:600}
+
+.author-section{padding:2rem 0 0;color:var(--muted)}
+.site-footer{border-top:1px solid var(--line);margin-top:2rem;padding:1.3rem 0;color:var(--muted)}
+.compact-footer{text-align:center}
+
+.article-layout{padding:3rem 0 4rem}
+.article-page{max-width:760px;margin:0 auto;padding:clamp(1.1rem,3vw,2rem);background:linear-gradient(180deg,#0f1624,#111a2a);border:1px solid var(--line);border-radius:1rem}
+.article-page p{margin:0 0 1rem}
+
+@media (max-width:900px){.card-grid{grid-template-columns:1fr 1fr}.featured-card{grid-template-columns:1fr}}
+@media (max-width:760px){
+  .menu-toggle{display:inline-flex;border:1px solid var(--line);background:transparent;color:var(--text);border-radius:999px;padding:.42rem .82rem}
+  .menu-list{position:absolute;right:0;top:4rem;flex-direction:column;width:min(18rem,92vw);background:rgba(16,22,35,.98);padding:.8rem;border:1px solid var(--line);border-radius:.8rem;opacity:0;pointer-events:none;transform:translateY(-4px);transition:.2s}
+  .menu-list.open{opacity:1;pointer-events:auto;transform:translateY(0)}
+  .static-menu{position:static;opacity:1;pointer-events:auto;transform:none;width:auto;border:0;padding:0;background:transparent}
+  .card-grid{grid-template-columns:1fr}
+  .hero-image{min-height:46vh}
+}
